@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <title>CSS</title>
+       <!-- EXTERNAL STYLING -->
+       <link rel="stylesheet" href="style1.css">
+       <style>
+        
+       </style>
+
+       <!-- INTERNAL STYLING -->
+      <!-- <style>
+        h1 {
+            color: white;
+            background-color: darkcyan;
+            font-size: 80px;
+            font-weight: 100;
+            /* border-width: 4px;
+            border-style: solid;
+            border-color: darkgreen; */
+            border: 4px solid darkgreen;
+            border-radius: 10px;
+        }
+
+        p {
+            color: whitesmoke;
+            background-color: darkcyan;
+            font-size: 30px;
+            border-radius: 6px;            
+        }
+
+        img {
+          width: 300px;
+          height: 300px;
+          border-radius: 50%;
+        }
+      </style> -->
+</head>
+<body>
+    <h1>CSS Basics</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam delectus laborum molestias quas vel porro minima possimus nihil aliquid error! Nisi dignissimos quo provident possimus consequatur quasi enim facilis illum dolorem cupiditate. Nam inventore quos quasi eum dolorum, officiis hic, dicta voluptatibus minima fugit impedit. Laboriosam a neque earum iste quod mollitia repellendus nobis, commodi, explicabo atque aut voluptates. Sapiente aliquam voluptatem eligendi? Repellat libero quia nobis maiores? Voluptatum in optio culpa velit non vitae molestias sequi! Perferendis officiis ullam magni, sapiente voluptates libero ratione magnam dolor asperiores architecto accusamus iusto repellat tenetur recusandae quas cupiditate tempore, soluta error quidem.</p>
+    <img src="https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?q=80&w=1176&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="component_AI" width="250"/>
+    <img src="https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?q=80&w=1176&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="component_AI" width="250"/>
+    <ul>
+        <li>
+            <a href="https://www.facebook.com/">Facebook</a>
+        </li>
+        <li>
+            <a href="https://www.instagram.com/">Instagram</a>            
+        </li>
+        <li class="uppercase">
+            <a href="https://x.com/">Twitter</a>
+        </li>
+        <li>
+            <a href="https://linkenid.com/" id="linkedin-link">Linkedin</a>
+        </li>
+    </ul>
+
+    <h2 class="uppercase" style="color: rgb(0, 0, 120);">Color code</h2>
+
+    <p class="test-class">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, aliquid. Non, et temporibus expedita obcaecati eum optio quia. Assumenda repellendus quasi ipsum! Nostrum sapiente perferendis neque? Reiciendis aperiam totam dolor!</p>
+</body>
+</html>
+
+
+<!--
+  # CSS
+    - Cascading Style Sheets
+    - Add styles to webpage initially created using HTML
+    - 3 types of styling
+      - Inline styling
+        - 'style' attribute
+        - Syntax:
+          - style="property:value;"
+          - style="property1:value1; property2:value2;"
+
+            -property: name of the style
+            - value: value for that style
+      - Internal styling
+        - 'style' tag (inside head tag)
+        - Syntax:
+          <style>
+            h1 {
+              property1: value1;
+              property2: value2;
+            }
+          </style>
+      - External styling
+        - Create a separete .css file
+        - Link this external file to the HTML file
+          - Syntax:
+            -
+
+
+    - Properties:
+      - color: Add color to an the element
+      - background-color: Background color of the element
+      - font-size: Size of text element
+      - font-weight: Bold/Light (100-900)
+      - border: Border to an element
+        - Syntax:
+          border: [width]  [style]  [color]
+        - Sub properties
+        - border-width: Width of the border
+        - border-style: Border style (solid, dashed, dotted)
+        - border-color: Color of the border
+    - border-radius: Rounded borders
+    - width: Width of the element
+    - height: Height of the element
+    - padding: Space around the content before the border
+    - margin: Space around the content after the border
+    -padding, margin
+      - Syntax: [top] [right] [bottom] [left]
+      - sub properties
+        - *-top: Padding/Margin on the top
+        - *-right: Padding/Margin on the right
+        - *-bottom: Padding/Margin on the bottom
+        - *-left: Padding/Margin on the left
+      -More syntaxes:
+        - 1 units: All sides
+        - 2 units: [top, bottom] [right, left]
+        - 3 units: [top] [right, left] [bottom]
+    - font-family: FOnt type of the text element
+    - text-align: Align the text center/right/left [defoult]/justify
+
+  # Clases vs ID
+    - Multiple elements can have same class
+    - No two elements can have the same ID
+
+  # Selectors *** (more star more importan)
+    - Simple Selectors:
+      - Elements Selectors (h1, p img, etc)
+      - Class Selector (.)
+      - ID Selector (#)
+      - Universal Selector (*)
+
+      - Side note:
+        - This selectors can be grouped together as well
+          - Eg.: p, h1, .test-class, #test-id {}
+
+  # Specificity rules:
+    - Inline > Internal, External
+    - Latest style rule is applied
+
+  #Color codes
+    - RGB (Red, Green, Blue)
+      - Syntax: rgb (R, G, B)
+        - R, G, B can have values from 0-255
+      - Examples:
+        - rgb (0, 0, 255) Blue
+        - rgb (0, 255, 0) Grenn
+        - rgb (255, 0, 0) Red
+        - rgb (0, 0, 0) Black
+        - rgb (255, 255, 255) White
+      - RGBA (A - Alpha/Opacity/Transparency)
+        - A: 0-1 (0 is invisible and 1 is visible)
+    - HEX (0-F)
+      - Syntax: #RRGGBB
+        - RR, GG, BB can have values from 00-FF
+      -Examples:
+       - #0000FF : Blue
+       - #00FF00 : Grenn
+       - #FF0000 : Red
+       - #000000 : Black
+       - #FFFFFF : Withe
+      - Alpha
+        - 2 more digits added at the end
+
+
+  # Additional notes:
+    - Comments /* */
+-->

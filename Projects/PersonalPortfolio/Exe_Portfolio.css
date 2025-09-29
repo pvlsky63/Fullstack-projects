@@ -1,0 +1,220 @@
+  body {
+    font-family: serif;
+    background-color: #cac0b3;
+    color: #001233;
+    padding: 0;
+}
+/* Navbar */
+  #navbar {
+    background-color:#001233;
+    border: 3px solid #001233;
+    border-radius: 15px;
+}
+
+  #navbar ul {
+    text-align: center;
+    padding: 0;
+}
+
+  #navbar li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 120px;
+}
+
+  #navbar li a {
+    color: #cac0b3;
+    text-decoration: none;
+    font-size: 28px;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+  #navbar li a:hover {
+    transform: scale(1.4)
+}
+
+/* Header */
+ .header {
+    margin: 50px;
+}
+
+  #info {
+    text-align: center;
+    padding: 0;
+}
+
+  #info h1 {
+    font-size: 40px;
+}
+
+  #info p {
+    font-size: 21px;
+}
+
+#info ul {
+  padding: 0;
+}  
+
+#info li {
+    list-style: none;
+    display: inline-block;
+    margin: 10px 130px;
+}
+
+  #info li a {
+    color: #001233;
+    text-decoration: none;
+    display: inline-block;
+}
+
+  #info li a:hover {
+    cursor: alias;
+}
+
+/* Main */
+
+  #about {
+    color: #cac0b3;
+    background-color:#001233;
+    border: 3px solid;
+    border-radius: 15px;
+  }
+
+  #about h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  #about p {
+    font-size: 21px;
+    text-indent: 30px; 
+    margin: 0 25px 30px;
+  }
+
+  .experience {
+    font-size: 18px;
+    border: 3px solid #001233;
+    border-radius: 15px;
+    margin-top: 40px;
+    background-color: whitesmoke;
+    padding: 0 20px;
+  }
+
+  .experience h1 {
+    text-indent: 25px;
+    text-align: center;
+  }
+
+  .jobs {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .jobs li {
+    margin-top: 30px;
+  }
+
+  /* Header to company + data*/
+  .job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+
+
+  .company {
+    background-color: #001233;
+    color: #cac0b3;
+    border-radius: 15px;
+    padding: 3px 12px;
+    font-weight: bold;
+  }
+
+  .data {
+    color: #001233;
+    font-style: italic;
+  }
+
+  /* Projects*/
+
+  .projects {
+    background-image: url("./projects.png");
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+    color: #001233;
+    margin: 40px 0;
+  }
+
+  .projects h1 {
+    text-align: center;
+    font-size: 36px;
+    font-style: oblique;
+  }
+
+  .proj-1, .proj-2, .proj-3 {
+    display: inline-block;
+    border: 3px solid black;
+    border-radius: 15px;
+    padding: 110px;
+    margin: 20px 100px;
+    color: #001233;
+    opacity: 0.7;
+    transition: all 0.4s ease;
+  }
+
+  .proj-1 {
+    background-color: #f8d7da;
+  }
+
+  .proj-2 {
+    background-color: #d1ecf1;
+  }
+
+  .proj-3 {
+    background-color: #d4edda;
+  }
+
+  .proj-1:hover, .proj-2:hover, .proj-3:hover {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+
+  /* Skills*/
+
+  .skills {
+    border: 3px solid #001233;
+    border-radius: 15px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .skills h1 {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .skills ul{
+    padding: 35px;
+    font-size: 20px;
+  }
+
+  .skills li {
+    display: inline-block;
+    align-items: center;
+    margin: 30px;
+    padding: 30px;
+  }
+
+  input[type="range"] {
+    -webkit-appearance: none; /* Chrome, Safari, Edge */
+    -moz-appearance: none;    /* Firefox */
+    appearance: none;         /* estándar */
+    height: auto;
+    background: #001233;
+    border-radius: 15px;
+  }
