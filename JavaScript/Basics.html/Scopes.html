@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>var let const</h1>
+    <script>
+        /*
+          # Scope: Space where a variable can be accessed
+            - Global scope: Variable can be accessed anywhere in the file
+            - Function scope: 
+            - Block ({}): Variable can be accessed within the block
+
+          # Declare variables
+            - var, let, const
+            - ES6: ECMAScript 6 (2015)
+              - let, const
+
+            - var: Variables
+              - Can be re-declared
+              - Can be re-assigned
+              - Function scope
+            - let: Variables
+              - Can't be re-declared
+              - Can be re-assigned
+              - Block scope
+            - const: Constants
+              - Can't be re-declared
+              - Can't be re-assigned
+              - Block scope              
+        */
+
+        /* var x = 10 // Global scope
+
+        if(10 > 5) {
+          console.log(x) // Block scope
+        } 
+          
+        console.log(x)*/ 
+
+        /* var age = 35
+
+        if(10 > 5) {
+          var age = 50
+          console.log(age) 
+        }
+
+        console.log(x) */ 
+
+        /* ------------------ */
+        /* let student = 'Mark'
+        
+        if(100 > 50) {
+          let student = 'Ananya'
+          console.log(student)
+        }
+
+        console.log(student) // Al utilizar let este comando no puede leer a la declaracion por estar dentro del bloque, pero si la que esta suela ['Mark'] */
+
+        let x = 10
+        x = 100
+        console.log(x)
+
+
+    </script>    
+</body>
+</html>

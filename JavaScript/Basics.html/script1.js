@@ -1,0 +1,1 @@
+console.log('Hi from external scrip1.js')
